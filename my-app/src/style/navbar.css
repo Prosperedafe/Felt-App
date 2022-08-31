@@ -1,4 +1,4 @@
-header{
+.main-header{
     position: relative;
     padding-bottom: 4rem;
   }
@@ -7,14 +7,13 @@ header{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
-      padding: .8rem 4rem;
-      background: #FFFFFF;
-      box-shadow: 0px 4px 20px rgba(3, 62, 104, 0.1);
+      padding: .7rem 3rem;
       position: fixed;
+      box-shadow: 0px 4px 20px rgba(3, 62, 104, 0.1);
       top: 0;
-      /* width: 100%; */
-      /* z-index: 1; */
+      z-index: 1;
+      background: #FFFFFF;
+      width: 100%;
     }
   
     .hamburger{
@@ -51,8 +50,9 @@ header{
        display: flex;
        align-items: center;
        font-size: 1rem;
-       font-weight: 500;
+       font-weight: 600;
        transition: all .4s;
+       margin: 0;
     }
     
     .nav__links a{
@@ -61,11 +61,15 @@ header{
       color: #5E5DBA;
     }
   
-
-    /* footer */
-    
+.sign-btn{
+  border: 2px solid #5E5DBA;
+  border-radius: 5px;
+  padding: .4rem 1rem;
+  width: fit-content;
+}
+ /* footer */
+   
 footer{
-    min-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,33 +101,60 @@ footer{
     margin: 0 5px;
   }
 
-    @media only screen and (max-device-width: 900px){
-      .main__nav{
-          padding: 1rem 1rem;
-      }
-      .nav__links{
-          flex-direction: column;
-          position: absolute;
-          top: 3.3rem;
-          left: 0;
-          background: #5E5DBA;
-          height: 100vh;
-          overflow-y: scroll;
-          overflow-x: hidden;
-          padding: 2rem 0;
-          width: 100%;
-      }
-      .nav__links a{
-          color: white;
-          margin: 1rem auto;
-          display: inline-block;
-      }
+.app-nav-header{
+    position: relative;
+    padding-bottom: 4rem;
+}
+  .app-nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: .5rem 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(3, 62, 104, 0.1);
+    z-index: 1;
+    width: 100%;
+  }
+  .app-nav img{
+    height: 40px;
+  }
+  .app-nav span{
+    color: #5E5DBA;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+
+
   
-      .felt__logo img{
-          height: 2rem;
-      }
-      
-      .hamburger{
-          display: block;
-      }
+@media only screen and (max-device-width: 900px){
+    .main__nav{
+        padding: 1rem 1rem;
     }
+    .nav__links{
+        flex-direction: column;
+        position: absolute;
+        top: 3.3rem;
+        left: 0;
+        background: #5E5DBA;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .nav__links a{
+        color: white;
+        margin: 1rem auto;
+        display: inline-block;
+    }
+
+    .felt__logo img{
+        height: 2rem;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+}

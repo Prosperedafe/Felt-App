@@ -1,11 +1,8 @@
 import React from "react";
 import logo from "../images/Subtract.svg"; 
-// import Style from "../App.css";
 import Style from "../style/navbar.css";
-// import JoinUs from "./join";
-// import Signup from "./signup";
-// import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 
@@ -16,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <header>
+    <header className="main-header">
     <nav className="main__nav">
       <div className="felt__logo">
         <img src={logo} alt="felt logo" /> 
@@ -27,10 +24,21 @@ const NavBar = () => {
         left: isActive ? "0" : "-100%",
       }}
       >
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About Us</a></li>
-        <li><a href="/">FAQ(s)</a></li>
-        <li className="sign-up-btn"><a href="/">JOIN US</a></li>
+        <li>
+          <Link to="/">Home</Link>
+          </li>
+        <li>
+          <Link to="/">About Us</Link>
+          </li>
+        <li>
+          <Link to="/">FAQ(s)</Link>
+          </li>
+        <li>
+          <Link to="/welcome">LOGIN</Link>
+          </li>
+        <li className="sign-btn">
+          <Link to="/join">SIGN UP</Link>
+          </li>
       </ul>
       <div className="hamburger"
       onClick={handleClick}

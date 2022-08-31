@@ -1,8 +1,12 @@
 import React from "react";
 import NavBar from "./mainNav";
 import Footer from "./footer";
-import HomeUi from "../style/home.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Style from "../style/home.css";
+import Iphone1 from "../images/X-2.svg";
+import Iphone2 from "../images/X-2.svg";
+import Femaleworker from "../images/female-worker.svg";
+import Maleworker from "../images/male-worker.svg";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -54,7 +58,9 @@ const Home = () => {
           </div>
         </section>
         <section className="about">
-          <figure>{/* <img src={Maleworker} alt="" /> */}</figure>
+          <figure>
+            <img src={Maleworker} alt="" />
+          </figure>
           <div>
             <h2>Who we are</h2>
             <p>
@@ -67,8 +73,8 @@ const Home = () => {
             </button>
           </div>
         </section>
-        <section className="our-app">
-          <div className="App">
+        <section className="App">
+          <div className="our-App">
             <h2>Get The App</h2>
             <p>
               Our mobile Application makes accessing our services even easier.
@@ -77,13 +83,15 @@ const Home = () => {
             </p>
             <button>COMING SOON</button>
           </div>
-          <div className="App-sample">
-            {/* <img className="iphone1" src={logo6} /> */}
-            {/* <img className="iphone2" src={logo6} /> */}
-          </div>
+          <figure className="App-sample">
+            <img className="iphone1" src={Iphone1} />
+            <img className="iphone2" src={Iphone2} />
+          </figure>
         </section>
         <section className="question">
-          <figure>{/* <img src={Femaleworker} alt="" /> */}</figure>
+          <figure>
+            <img src={Femaleworker} alt="" />
+          </figure>
           <div>
             <h2>Have Questions?</h2>
             <p>
