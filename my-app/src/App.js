@@ -10,6 +10,7 @@ import SchoolLogin from "./component/schoolLogin";
 import TeacherLogin from "./component/teacherLogin";
 import PasswordReset from "./component/passReset";
 import PassRecover from "./component/passRecover";
+import Faqs from "./component/faq";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       <Route path="/teachers" element={<TeacherSignup />} />
       <Route path="/reset" element={<PasswordReset />} />
       <Route path="/recover" element={<PassRecover />} />
+      <Route path="/faq(s)" element={<Faqs />} />
     </Routes>
   );
 };

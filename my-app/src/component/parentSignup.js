@@ -2,7 +2,6 @@ import React from "react";
 import Style from "../style/account.css";
 import { Link } from "react-router-dom";
 import AppNav from "./defNav";
-// import Back from "./backBtn";
 
 const ParentSignup = () => {
   return (
@@ -11,7 +10,6 @@ const ParentSignup = () => {
         <AppNav />
       </header>
       <div className="container1">
-        {/* <Back /> */}
         <section className="sign-section">
           <h1>Sign Up as Parent</h1>
           <form>

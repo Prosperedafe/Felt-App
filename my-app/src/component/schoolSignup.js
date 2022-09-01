@@ -31,8 +31,9 @@ const SchoolSignup = () => {
             <span>Click to get passcode</span>
             <button type="submit">Sign Up</button>
           </form>
-          <p>Already have an account?</p>
-          <Link to="/teacher">Login</Link>
+          <p>
+            Already have an account? <Link to="/teacher">Login</Link>
+          </p>
         </section>
       </div>
     </>

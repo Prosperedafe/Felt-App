@@ -6,8 +6,6 @@ import Iphone1 from "../images/X-2.svg";
 import Iphone2 from "../images/X-2.svg";
 import Femaleworker from "../images/female-worker.svg";
 import Maleworker from "../images/male-worker.svg";
-// import Testnav from "./navbar";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (

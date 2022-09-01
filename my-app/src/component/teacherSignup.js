@@ -10,7 +10,6 @@ const TeacherSignup = () => {
         <AppNav />
       </header>
       <div className="container1">
-        {/* <Back /> */}
         <section className="sign-section">
           <h1>Sign Up as Parent</h1>
           <form>
@@ -31,7 +30,7 @@ const TeacherSignup = () => {
             <button type="submit">Sign Up</button>
           </form>
           <p>
-            Already have an account? <a href="/">Login</a>
+            Already have an account? <Link to="/teachers">Login</Link>
           </p>
         </section>
       </div>

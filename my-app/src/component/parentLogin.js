@@ -20,7 +20,7 @@ const ParentLogin = () => {
               Forgot password?
             </Link>
             <p>
-              Don't have an account? <a hfef="/">Sign Up</a>
+              Don't have an account? <Link to="/parents">Sign Up</Link>
             </p>
           </form>
         </div>
