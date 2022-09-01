@@ -1,0 +1,35 @@
+header{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    border: 2px solid black;
+    padding: .5rem 3rem;
+    background: white;
+}
+.felt-logo{
+    display: flex;
+    align-items: center;
+}
+.felt-logo span{
+    color: #5E5DBA;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.felt-logo img{
+    height: 2.5rem;
+}
+.hamburger{
+    font-display: none;
+}
+ul{
+    display: flex;
+}
+ul a{
+    color: #5E5DBA;
+    font-weight: 600;
+    margin: 1.5rem;
+}

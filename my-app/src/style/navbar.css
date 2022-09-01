@@ -7,13 +7,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: .7rem 3rem;
+      padding: .7rem 2rem;
+      left: 0;
+      right: 0;
       position: fixed;
       box-shadow: 0px 4px 20px rgba(3, 62, 104, 0.1);
       top: 0;
       z-index: 1;
       background: #FFFFFF;
-      width: 100%;
     }
   
     .hamburger{
@@ -42,7 +43,7 @@
     
     .felt__logo span{
       color: #5E5DBA;
-      margin: 0 1rem;
+      margin-left: 1rem;
       font-size: 1.5rem;
     }
     
@@ -66,6 +67,7 @@
   border-radius: 5px;
   padding: .4rem 1rem;
   width: fit-content;
+  height: fit-content;
 }
  /* footer */
    
@@ -97,7 +99,7 @@ footer{
     display: flex;
   }
   .social-links-icons img {
-    height: 35px;
+    height: 2.3rem;
     margin: 0 5px;
   }
 
@@ -125,17 +127,14 @@ footer{
     font-size: 1.5rem;
   }
 
-
-
-  
-@media only screen and (max-device-width: 900px){
+@media only screen and (max-device-width: 920px){
     .main__nav{
         padding: 1rem 1rem;
     }
     .nav__links{
         flex-direction: column;
         position: absolute;
-        top: 3.3rem;
+        top: 4rem;
         left: 0;
         background: #5E5DBA;
         height: 100vh;
@@ -157,4 +156,16 @@ footer{
     .hamburger{
         display: block;
     }
+}
+@media only screen and (max-device-width: 750px){
+   footer{
+    padding: 2rem;
+  }
+}
+@media only screen and (max-device-width: 570px){
+   /* footer */
+   footer{
+    flex-direction: column;
+    padding: 2rem;
+  }
 }

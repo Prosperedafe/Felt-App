@@ -6,6 +6,7 @@ import Iphone1 from "../images/X-2.svg";
 import Iphone2 from "../images/X-2.svg";
 import Femaleworker from "../images/female-worker.svg";
 import Maleworker from "../images/male-worker.svg";
+// import Testnav from "./navbar";
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Home = () => {
@@ -103,7 +104,7 @@ const Home = () => {
         <section className="contact">
           <h2>Contact us</h2>
           <form>
-            <input type="text" placeholder="Email Adress" />
+            <input type="text" placeholder="Email Adress" required />
             <br />
             <textarea placeholder="Message" rows="4" cols="50"></textarea>
             <br />

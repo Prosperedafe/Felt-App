@@ -32,7 +32,7 @@ const ParentSignup = () => {
             <button type="submit">Sign Up</button>
           </form>
           <p>
-            Already have an account? <a href="/">Login</a>
+            Already have an account? <Link to="/parents">Login</Link>
           </p>
         </section>
       </div>
