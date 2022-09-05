@@ -6,6 +6,7 @@ import Iphone1 from "../images/X-2.svg";
 import Iphone2 from "../images/X-2.svg";
 import Femaleworker from "../images/female-worker.svg";
 import Maleworker from "../images/male-worker.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -68,7 +69,7 @@ const Home = () => {
               teachers to ensure that quality would be provided while teaching.
             </p>
             <button className="sign-up-btn">
-              <a href="/">SIGN UP</a>
+              <Link to="/join">SIGN UP</Link>
             </button>
           </div>
         </section>
@@ -96,10 +97,12 @@ const Home = () => {
             <p>
               We have compiled a list of the questions that have been answered
             </p>
-            <button>SIGN UP</button>
+            <button>
+              <Link to="/join">SIGN UP</Link>
+            </button>
           </div>
         </section>
-        <section className="contact">
+        <section className="contact-us">
           <h2>Contact us</h2>
           <form>
             <input type="text" placeholder="Email Adress" required />

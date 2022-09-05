@@ -1,17 +1,17 @@
 import React from "react";
 import Style from "../style/account.css";
 import { Link } from "react-router-dom";
-import AppNav from "./defNav";
+import NavBar from "./mainNav";
 
 const TeacherSignup = () => {
   return (
     <>
       <header>
-        <AppNav />
+        <NavBar />
       </header>
       <div className="container1">
         <section className="sign-section">
-          <h1>Sign Up as Parent</h1>
+          <h1>Sign Up as Teacher</h1>
           <form>
             <input type="text" placeholder="School Name" required /> <br />
             <input type="email" placeholder="E-mail Adress" required /> <br />
@@ -30,7 +30,7 @@ const TeacherSignup = () => {
             <button type="submit">Sign Up</button>
           </form>
           <p>
-            Already have an account? <Link to="/teachers">Login</Link>
+            Already have an account? <Link to="/teacher">Login</Link>
           </p>
         </section>
       </div>

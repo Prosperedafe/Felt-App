@@ -11,6 +11,8 @@ import TeacherLogin from "./component/teacherLogin";
 import PasswordReset from "./component/passReset";
 import PassRecover from "./component/passRecover";
 import Faqs from "./component/faq";
+import TeacherProfile from "./component/teacherProfile";
+import EditProfile from "./component/profileEdit";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -29,6 +31,8 @@ const App = () => {
       <Route path="/reset" element={<PasswordReset />} />
       <Route path="/recover" element={<PassRecover />} />
       <Route path="/faq(s)" element={<Faqs />} />
+      <Route path="/profile" element={<TeacherProfile />} />
+      <Route path="/edit" element={<EditProfile />} />
     </Routes>
   );
 };

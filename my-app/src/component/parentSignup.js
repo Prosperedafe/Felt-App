@@ -1,13 +1,13 @@
 import React from "react";
 import Style from "../style/account.css";
 import { Link } from "react-router-dom";
-import AppNav from "./defNav";
+import NavBar from "./mainNav";
 
 const ParentSignup = () => {
   return (
     <>
       <header>
-        <AppNav />
+        <NavBar />
       </header>
       <div className="container1">
         <section className="sign-section">
@@ -30,7 +30,7 @@ const ParentSignup = () => {
             <button type="submit">Sign Up</button>
           </form>
           <p>
-            Already have an account? <Link to="/parents">Login</Link>
+            Already have an account? <Link to="/parent">Login</Link>
           </p>
         </section>
       </div>

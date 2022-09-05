@@ -1,13 +1,13 @@
 import React from "react";
 import Style from "../style/account.css";
-import AppNav from "./defNav";
+import NavBar from "./mainNav";
 import { Link } from "react-router-dom";
 import HomeBtn from "./home-btn";
 
 const SchoolLogin = () => {
   return (
     <>
-      <AppNav />
+      <NavBar />
       <section className="login-page">
         <HomeBtn />
         <div className="login-container">

@@ -2,11 +2,12 @@ import React from "react";
 import Style from "../style/password.css";
 import AppNav from "./defNav";
 import Back from "./backBtn";
+import NavBar from "./mainNav";
 
 const PassRecover = () => {
   return (
     <>
-      <AppNav />
+      <NavBar />
       <section className="password">
         <div className="passwordRecovery">
           <h1>Password Recovery</h1>

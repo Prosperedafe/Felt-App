@@ -1,26 +1,26 @@
-h1{
+.intro h1{
   color: #5E5DBA;
   font-size: 4rem;
   margin: 3rem 0;
   width: clamp(20rem, 50%, 100rem);
 }
-p{
+.intro p, .about p , .App p, .question p{
   font-size: 1rem;
   font-weight: 600;
   margin: 3rem 0;
   opacity: .9;
   line-height: 2rem;
 }
+.App h2, .about h2, .contact-us h2, .question h2{
+  font-size: 3rem;
+  color: #5E5DBA;
+  font-weight: bold;
+}
 h3{
   color: #5E5DBA;
   font-size: 2rem;
   font-weight: bold;
   margin: 2rem 0;
-}
-h2{
-  font-size: 3rem;
-  color: #5E5DBA;
-  font-weight: bold;
 }
 .intro{
     display: flex;
@@ -134,11 +134,11 @@ h2{
   }  
     .App{
       display: flex;
-      margin: 13rem 0 14rem 0;
+      margin: 4rem 0 3rem 0;
     }
   .our-App{
     padding: 2rem 0rem 2rem 2rem;
-    flex: 50%;
+    flex: 40%;
     text-align: left;
   }
   .App button{
@@ -147,30 +147,27 @@ h2{
     padding: .7rem 2rem;
     background: white;
     color: #5E5DBA;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
   }
   
   .App-sample{
     position: relative;
     flex: 50%;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .iphone1{
-    position: absolute;
     transform: rotate(45deg);
-    right: 1%;
-    width: 80%;
-    top: -20%;
-    height: auto;
+    z-index: -1;
+    max-height: 80%;
+    margin: 0 -25% 0 0;
   }
   .iphone2{
     position: absolute;
-    width: 80%;
-    height: auto;
-    top: -20%;
-    right: 25%;
-    height: auto;
+    right: 0;
+    max-height: 80%;
+    margin: 0 25% 0 0;
   }
   
   .question{
@@ -192,11 +189,11 @@ h2{
     height: auto;
   }
   
-  .contact{
+  .contact-us{
     text-align: center;
     padding: 2rem 0 3rem 0;
   }
-  .contact input{
+  .contact-us input{
     margin: 2rem 0;
     font-size: 1.5rem;
     color: #5E5DBA;
@@ -210,7 +207,7 @@ h2{
   input:focus{
     outline: none;
   }
-  .contact textarea{
+  .contact-us textarea{
     resize: none;
     font-size: 1.5rem;
     color: #5E5DBA;
@@ -220,10 +217,10 @@ h2{
     padding: .5rem 1rem;
     width: clamp(15rem, 50%, 200rem);
   }
-  .contact textarea:focus{
+  .contact-us textarea:focus{
     outline: none;
   }
-  .contact button{
+  .contact-us button{
     background: #FFFFFF;
     padding: .7rem 2rem;
     border: 3px solid #5E5DBA;
@@ -235,8 +232,16 @@ h2{
     margin-top: 1.5rem;
   }
   
-  
-
+  @media only screen and (max-device-width: 1350px){
+    .intro3 {
+      background: #FFFFFF;
+    }
+  }
+  @media only screen and (max-device-width: 1050px){
+    .intro1, .intro2, .intro3 {
+      background: #FFFFFF;
+    }
+  }
   @media only screen and (max-device-width: 950px){
     h2{
       font-size: 2rem;
@@ -246,12 +251,8 @@ h2{
       width: 80%;
     }
     .intro1, .intro2, .intro3 {
-      background: #FFFFFF;
       padding: 2rem;
-    }
-    .staffs-No{
-      flex-direction: column;
-      padding: 1rem;
+      min-width: 90vw;
     }
     .teachers, .schools{
       padding: .5rem;
@@ -279,11 +280,30 @@ h2{
     }
     .App-sample{
       padding: 1rem;
-
+    }
+    .iphone1{
+      width: 100%;
+      margin: 0 0 0 0;
+      height: 100%;
+    }
+    .iphone2{
+      width: 100%;
+      margin: 0 0 0 0;
+      height: auto;
     }
     .question{
       flex-direction: column;
       padding: 1rem;
     }  
     
+  }
+  @media only screen and (max-device-width: 650px) {
+    .intro1, .intro2, .intro3 {
+      padding: 1rem;
+      min-width: 90vw;
+    }
+    .staffs-No{
+      padding: 1rem;
+      flex-direction: column;
+    }  
   }

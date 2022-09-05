@@ -1,17 +1,15 @@
 import React from "react";
 import Style from "../style/account.css";
 import { Link } from "react-router-dom";
-import AppNav from "./defNav";
-// import Back from "./backBtn";
+import NavBar from "./mainNav";
 
 const SchoolSignup = () => {
   return (
     <>
       <header>
-        <AppNav />
+        <NavBar />
       </header>
       <div className="container1">
-        {/* <Back /> */}
         <section className="sign-section">
           <h1>Sign Up as School</h1>
           <form>
@@ -32,7 +30,7 @@ const SchoolSignup = () => {
             <button type="submit">Sign Up</button>
           </form>
           <p>
-            Already have an account? <Link to="/teacher">Login</Link>
+            Already have an account? <Link to="/school">Login</Link>
           </p>
         </section>
       </div>

@@ -4,7 +4,7 @@ import Style from "../style/navbar.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const ProfileNav = () => {
 
   const [isActive, setIsActive] = useState(false);
 
@@ -28,16 +28,15 @@ const NavBar = () => {
           <Link to="/home">Home</Link>
           </li>
         <li>
-          <Link to="/">About Us</Link>
+          <Link to="/">Schools</Link>
           </li>
         <li>
-          <Link to="/faq(s)">FAQ(s)</Link>
+          <Link to="/faq(s)">Help</Link>
           </li>
         <li>
-          <Link to="/welcome">LOGIN</Link>
-          </li>
-        <li className="sign-btn">
-          <Link to="/join">SIGN UP</Link>
+          <Link to="/welcome">
+            <img alt="profile"/>
+          </Link>
           </li>
       </ul>
       <div className="hamburger"
@@ -67,4 +66,4 @@ const NavBar = () => {
     </header>
   );
 };
-export default NavBar;
+export default ProfileNav;

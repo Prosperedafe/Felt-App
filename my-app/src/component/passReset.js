@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "../style/password.css";
 import { useState } from "react";
+import NavBar from "./mainNav";
 
 const PasswordReset = () => {
   //   const [passwordType, setPasswordType] = useState("password");
@@ -17,23 +18,26 @@ const PasswordReset = () => {
   //   };
 
   return (
-    <div className="updatePassword">
-      <div>
-        <h1>Password Reset</h1>
-        <form>
-          <input
-            // onChange={handlePasswordChange}
-            type="password"
-            placeholder="New Password"
-            required
-          />
-          {/* <button onClick={togglePassword}>kjvt</button> */}
-          <br />
-          <input type="password" placeholder="Confirm Password" required />
-          <button type="submit">Update</button>
-        </form>
+    <>
+      <NavBar />
+      <div className="updatePassword">
+        <div>
+          <h1>Password Reset</h1>
+          <form>
+            <input
+              // onChange={handlePasswordChange}
+              type="password"
+              placeholder="New Password"
+              required
+            />
+            {/* <button onClick={togglePassword}>kjvt</button> */}
+            <br />
+            <input type="password" placeholder="Confirm Password" required />
+            <button type="submit">Update</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

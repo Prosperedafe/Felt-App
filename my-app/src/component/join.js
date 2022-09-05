@@ -3,12 +3,13 @@ import Femaleworker from "../images/female-worker.svg";
 import Style from "../style/join.css";
 import Footer from "./footer";
 import HomeBtn from "./home-btn";
-
 import { Link } from "react-router-dom";
+import NavBar from "./mainNav";
 
 const JoinUs = () => {
   return (
     <>
+      <NavBar />
       <main className="join-us">
         <HomeBtn />
         <section className="select-profile">
