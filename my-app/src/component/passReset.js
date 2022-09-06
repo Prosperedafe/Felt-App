@@ -4,19 +4,6 @@ import { useState } from "react";
 import NavBar from "./mainNav";
 
 const PasswordReset = () => {
-  //   const [passwordType, setPasswordType] = useState("password");
-  //   const [passwordInput, setPasswordInput] = useState("");
-  //   const handlePasswordChange = (evnt) => {
-  //     setPasswordInput(evnt.target.value);
-  //   };
-  //   const togglePassword = () => {
-  //     if (passwordType === "password") {
-  //       setPasswordType("text");
-  //       console.log("hello");
-  //     }
-  //     setPasswordType("password");
-  //   };
-
   return (
     <>
       <NavBar />
@@ -24,13 +11,7 @@ const PasswordReset = () => {
         <div>
           <h1>Password Reset</h1>
           <form>
-            <input
-              // onChange={handlePasswordChange}
-              type="password"
-              placeholder="New Password"
-              required
-            />
-            {/* <button onClick={togglePassword}>kjvt</button> */}
+            <input type="password" placeholder="New Password" required />
             <br />
             <input type="password" placeholder="Confirm Password" required />
             <button type="submit">Update</button>

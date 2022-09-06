@@ -17,7 +17,7 @@ const ParentLogin = () => {
             <input type="email" placeholder="Email" required /> <br />
             <input type="Password" placeholder="Password" required /> <br />
             <button>Log in</button>
-            <Link className="pass-reset" to="/">
+            <Link className="pass-reset" to="/reset">
               Forgot password?
             </Link>
             <p>

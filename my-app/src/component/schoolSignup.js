@@ -1,9 +1,14 @@
 import React from "react";
 import Style from "../style/account.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import NavBar from "./mainNav";
 
 const SchoolSignup = () => {
+  const [formSubmit, setformSubmit] = useState();
+
+  const handleForm = () => {};
+
   return (
     <>
       <header>
@@ -12,7 +17,7 @@ const SchoolSignup = () => {
       <div className="container1">
         <section className="sign-section">
           <h1>Sign Up as School</h1>
-          <form>
+          <form onSubmit={handleForm}>
             <input type="text" placeholder="School Name" required /> <br />
             <input type="email" placeholder="E-mail Adress" required /> <br />
             <input type="tel" placeholder="Phone no." required /> <br />

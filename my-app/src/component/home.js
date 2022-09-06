@@ -6,6 +6,9 @@ import Iphone1 from "../images/X-2.svg";
 import Iphone2 from "../images/X-2.svg";
 import Femaleworker from "../images/female-worker.svg";
 import Maleworker from "../images/male-worker.svg";
+import Intro1 from "../images/mobile-bg1.svg";
+import Intro2 from "../images/mobile-bg2.svg";
+import Intro3 from "../images/mobile-bg3.svg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -15,32 +18,49 @@ const Home = () => {
       <main>
         <div className="intro">
           <section className="intro1">
-            <h1>Get access to the best teachers in town</h1>
-            <p>
-              Making refined and qualified Teachers to all schools in Nigeria is
-              our Priority. Our Platform Creates a Link between teachers and
-              Schools by providing a medium to vet teachers, and act as a means
-              of communication to all parties
-            </p>
-            <button>SEE HOW IT WORKS</button>
+            <div className="flex1">
+              <h1>Get access to the best teachers in town</h1>
+              <p>
+                Making refined and qualified Teachers to all schools in Nigeria
+                is our Priority. Our Platform Creates a Link between teachers
+                and Schools by providing a medium to vet teachers, and act as a
+                means of communication to all parties
+              </p>
+              <button>SEE HOW IT WORKS</button>
+            </div>
+            <figure>
+              <img src={Intro1} />
+            </figure>
           </section>
+
           <section className="intro2">
-            <h1>Get the best Quality tutor for your Kid's Home Lessons</h1>
-            <p>
-              Making refined and qualified Teachers to all schools in Nigeria is
-              our Priority. Our Platform Creates a Link between teachers and
-              Schools by providing a medium to vet teachers, and act as a means
-              of communication to all parties
-            </p>
+            <div className="flex1">
+              <h1>Get the best Quality tutor for your Kid's Home Lessons</h1>
+              <p>
+                Making refined and qualified Teachers to all schools in Nigeria
+                is our Priority. Our Platform Creates a Link between teachers
+                and Schools by providing a medium to vet teachers, and act as a
+                means of communication to all parties
+              </p>
+            </div>
+            <figure>
+              <img src={Intro2} />
+            </figure>
           </section>
+
           <section className="intro3">
-            <h1>Support quality education by hiring quality teachers</h1>
-            <p>
-              Making refined and qualified Teachers to all schools in Nigeria is
-              our Priority. Our Platform Creates a Link between teachers and
-              Schools by providing a medium to vet teachers, and act as a means
-              of communication to all parties
-            </p>
+            <div className="flex1">
+              <h1>Support quality education by hiring quality teachers</h1>
+              <p>
+                Making refined and qualified Teachers to all schools in Nigeria
+                is our Priority. Our Platform Creates a Link between teachers
+                and Schools by providing a medium to vet teachers, and act as a
+                means of communication to all parties
+              </p>
+            </div>
+            <figure>
+              <img src={Intro3} />
+            </figure>
           </section>
         </div>
         <section className="staffs-No">

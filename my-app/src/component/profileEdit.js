@@ -36,14 +36,10 @@ const EditProfile = () => {
           <div className="grid-cols">
             <input
               className="small-cols"
-              type="number"
+              type="date"
               placeholder="Start date"
             />
-            <input
-              className="small-cols"
-              type="number"
-              placeholder="End date"
-            />
+            <input className="small-cols" type="date" placeholder="End date" />
             <input className="small-cols" type="text" placeholder="Degree" />
           </div>
           <br />
