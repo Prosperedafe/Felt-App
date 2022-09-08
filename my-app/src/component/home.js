@@ -118,7 +118,9 @@ const Home = () => {
               We have compiled a list of the questions that have been answered
             </p>
             <button>
-              <Link to="/join">SIGN UP</Link>
+              <Link style={sign} to="/join">
+                SIGN UP
+              </Link>
             </button>
           </div>
         </section>
@@ -136,6 +138,10 @@ const Home = () => {
       <Footer />
     </>
   );
+};
+
+const sign = {
+  color: "#5E5DBA",
 };
 
 export default Home;

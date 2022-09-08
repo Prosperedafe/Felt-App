@@ -18,11 +18,11 @@ const Footer = () => {
       <div className="footer__social-links">
         <p>Connect with us on social media</p>
         <div className="social-links-icons">
-          <img src={github} />
-          <img src={linkedin} />
-          <img src={instagram} />
-          <img src={facebook} />
-          <img src={twitter} />
+          <a href="https://github.com/Prosperedafe" target="_blank" ><img src={github} /></a>
+          <a href="https://www.linkedin.com/in/edafe-prosper-b046ba239/" target="_blank" ><img src={linkedin} /></a>
+          <a href="https://www.instagram.com/mamusedafe19/" target="_blank" ><img src={instagram} /></a>
+          <a href="https://www.facebook.com/prosper.edafe.10" target="_blank" > <img src={facebook} /></a>
+          <a href="https://github.com/Prosperedafe" target="_blank" > <img src={twitter} /></a>
         </div>
       </div>
     </footer>

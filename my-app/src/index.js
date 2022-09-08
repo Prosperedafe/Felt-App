@@ -6,6 +6,7 @@ import TeacherProfile from "./component/teacherProfile";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import EditProfile from "./component/profileEdit";
+import Token from "./component/token";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

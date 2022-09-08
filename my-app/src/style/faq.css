@@ -49,10 +49,11 @@
     border-radius: 25px;
     border: none;
     color: #5E5DBA;
-    font-size: 1rem;
+    font-size: .9rem;
     padding: .5rem 1rem;
     height: fit-content;
-    font-weight: 550;
+    font-family: poppins;
+    font-weight: 500;
     display: block;
     margin: 2rem;
     width: 80%;
