@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Style from "../style/password.css";
 import NavBar from "./mainNav";
+import { Navigate } from "react-router-dom";
 
-const Token = ()  => {
+const Token = ({ authorized })  => {
     return (
         <>
         <NavBar/>

@@ -1,300 +1,386 @@
-.intro h1{
+.intro h1 {
   color: #5E5DBA;
   font-size: 4rem;
   margin: 3rem 0;
 }
-.intro p, .about p , .App p, .question p{
-  font-size: 1rem;
-  font-weight: 600;
+
+.intro p,
+.about p,
+.App p,
+.question p {
+  font-size: 1.1rem;
+  font-weight: 500;
   margin: 3rem 0;
   opacity: .9;
   line-height: 2rem;
 }
-.App h2, .about h2, .contact-us h2, .question h2{
+
+.App h2,
+.about h2,
+.contact-us h2,
+.question h2 {
   font-size: 3rem;
   color: #5E5DBA;
   font-weight: bold;
 }
-h3{
+
+h3 {
   color: #5E5DBA;
   font-size: 2rem;
   font-weight: bold;
   margin: 2rem 0;
 }
-.intro{
-    display: flex;
-    overflow-x: scroll;
+
+.intro {
+  display: flex;
+  overflow-x: scroll;
+  margin: 1rem 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sign-up-btn {
+  font-weight: bold;
+  border: 2px solid #5E5DBA;
+  box-shadow: 0px 4px 10px rgba(3, 62, 104, 0.2);
+  border-radius: 10px;
+  padding: .4rem 1.5rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.intro1,
+.intro2,
+.intro3 {
+  display: flex;
+  justify-content: space-between;
+  min-width: 92vw;
+  padding: 3rem;
+  margin: .3rem 0;
+  box-shadow: 4px 4px 4px 9px rgba(0, 0, 0, 0.2);
+}
+
+.intro1 .flex1,
+.intro2 .flex1,
+.intro3 .flex1 {
+  flex: 50%;
+}
+
+.intro1 figure,
+.intro2 figure,
+.intro3 figure {
+  flex: 50%;
+  margin: 0;
+}
+
+.intro1 figure img {
+  width: 80%;
+  height: auto;
+}
+
+.intro2 figure img {
+  width: 80%;
+  height: auto;
+}
+
+.intro3 figure img {
+  width: 80%;
+  height: auto;
+}
+
+.intro::-webkit-scrollbar {
+  display: none;
+}
+
+.intro1 button {
+  font-weight: bold;
+  border: 2px solid #5E5DBA;
+  box-shadow: 0px 4px 20px rgba(3, 62, 104, 0.2);
+  color: #5E5DBA;
+  padding: .7rem 2rem;
+  margin: 3rem 0;
+  border-radius: 15px;
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
+.staffs-No {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  margin: 5rem 0 0 0;
+  text-align: center;
+}
+
+.teachers,
+.schools {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(33, 32, 156, 0.15);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.teachers button,
+.schools button {
+  padding: 1rem;
+  font-size: 4rem;
+  color: #5E5DBA;
+  font-weight: bold;
+  border: none;
+  margin: .5rem 1rem;
+  background: white;
+  box-shadow: inset 0px 4px 4px rgba(33, 32, 156, 0.2);
+}
+
+.about {
+  margin: 4rem 0;
+  padding: 2rem 4rem;
+  display: flex;
+}
+
+.about figure {
+  flex: 50%;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+}
+
+.about div {
+  margin: 1rem;
+  flex: 50%;
+}
+
+.about button {
+  margin: 0 3rem;
+  padding: .5rem 2rem;
+  font-size: 1.3rem;
+}
+
+.about button a {
+  color: #5E5DBA;
+  font-weight: 700;
+}
+
+.App {
+  display: flex;
+  margin: 4rem 0 3rem 0;
+}
+
+.our-App {
+  padding: 2rem 0rem 2rem 2rem;
+  flex: 40%;
+  text-align: left;
+}
+
+.App button {
+  border: 2px solid #5E5DBA;
+  border-radius: 10px;
+  padding: .7rem 2rem;
+  background: white;
+  color: #5E5DBA;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.App-sample {
+  position: relative;
+  flex: 50%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.iphone1 {
+  transform: rotate(45deg);
+  z-index: -1;
+  max-height: 80%;
+  margin: 0 -25% 0 0;
+}
+
+.iphone2 {
+  position: absolute;
+  right: 0;
+  max-height: 80%;
+  margin: 0 25% 0 0;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  margin: 3rem 0;
+}
+
+.question button {
+  color: #5E5DBA;
+  font-weight: bold;
+  background: white;
+  border: 2px solid #5E5DBA;
+  border-radius: 10px;
+  padding: .6rem 2rem;
+  font-size: 1.3rem;
+}
+
+.question img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-us {
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.contact-us input {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: #5E5DBA;
+  padding: 1rem 2rem;
+  background: #FFFFFF;
+  box-shadow: inset 0px -4px 4px rgba(33, 32, 156, 0.2), inset 0px 4px 4px rgba(33, 32, 156, 0.2);
+  border-radius: 23px;
+  border: none;
+  width: clamp(15rem, 40%, 200rem);
+}
+
+input:focus {
+  outline: none;
+}
+
+.contact-us textarea {
+  resize: none;
+  font-size: 1.5rem;
+  color: #5E5DBA;
+  background: #FFFFFF;
+  box-shadow: inset 0px -4px 4px rgba(33, 32, 156, 0.2), inset 0px 4px 4px rgba(33, 32, 156, 0.2);
+  border-radius: 23px;
+  padding: .5rem 1rem;
+  width: clamp(18rem, 50%, 200rem);
+}
+
+.contact-us textarea:focus {
+  outline: none;
+}
+
+.contact-us button {
+  background: #FFFFFF;
+  padding: .7rem 3rem;
+  border: 3px solid #5E5DBA;
+  box-shadow: 0px 4px 20px rgba(4, 85, 143, 0.2);
+  border-radius: 10px;
+  color: #5E5DBA;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-device-width: 950px) {
+
+  .intro1,
+  .intro2,
+  .intro3 {
+    flex-direction: column-reverse;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .App h2,
+  .about h2,
+  .contact-us h2,
+  .question h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro1,
+  .intro2,
+  .intro3 {
+    padding: 2rem;
+    min-width: 90vw;
+  }
+
+  .teachers,
+  .schools {
+    padding: .5rem;
     margin: 1rem 0;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
   }
-  
-  .sign-up-btn{
-    font-weight: bold;
-    border: 2px solid #5E5DBA;
-    box-shadow: 0px 4px 10px rgba(3, 62, 104, 0.2);
-    border-radius: 10px;
-    padding: .4rem 1.5rem;
-    width: fit-content;
-    cursor: pointer;
+
+  .teachers button,
+  .schools button {
+    font-size: 3rem;
   }
-  .intro1, .intro2, .intro3{
-    display: flex;
-    justify-content: space-between;
-    min-width: 92vw;
-    padding: 3rem;
-    margin: .3rem 0;
-    box-shadow: 4px 4px 4px 9px rgba(0, 0, 0, 0.2);
+
+  .teachers h3,
+  .schools h3 {
+    font-size: 1.5rem;
   }
-  .intro1 .flex1, .intro2 .flex1, .intro3 .flex1{
-    flex: 50%;
-  }
-  .intro1 figure, .intro2 figure, .intro3 figure{
-    flex: 50%;
-    margin: 0;
-  }
-  .intro1 figure img{
-    width: 80%;
-    height: auto;
-  }
-  .intro2 figure img{
-    width: 80%;
-    height: auto;
-  }
-  .intro3 figure img{
-    width: 80%;
-    height: auto;
-  }
-  .intro::-webkit-scrollbar{
-    display: none;
-  }
-  
-  .intro1 button{
-    font-weight: bold;
-    border: 2px solid #5E5DBA;
-    box-shadow: 0px 4px 20px rgba(3, 62, 104, 0.2);
-    color: #5E5DBA;
-    padding: .7rem 2rem;
-    margin: 3rem 0;
-    border-radius: 15px;
-    width: fit-content;
-  }
-  
-  .staffs-No{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2rem;
-    margin: 5rem 0 0 0;
-    text-align: center;
-  }
-  .teachers, .schools{
-    background: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(33, 32, 156, 0.15);
-    border-radius: 25px;
-    padding: 2rem;
-    margin: 2rem;
-  }
-  .teachers button, .schools button{
+
+  .about {
+    flex-direction: column;
     padding: 1rem;
-    font-size: 4rem;
-    color: #5E5DBA;
-    font-weight: bold;
-    border: none;
-    margin: .5rem 1rem;
-    background: white;
-    box-shadow: inset 0px 4px 4px rgba(33, 32, 156, 0.2);
   }
-  
+
+  .question {
+    flex-direction: column;
+  }
+
+  .App {
+    flex-direction: column;
+    margin: 4rem 0 1rem 0;
+  }
+
+  .our-App {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .App-sample {
+    padding: 1rem;
+  }
+
+  .iphone1 {
+    width: 100%;
+    margin: 0 0 0 0;
+    height: 100%;
+  }
+
+  .iphone2 {
+    width: 100%;
+    margin: 0 0 0 0;
+    height: auto;
+  }
+
+  .question {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+}
+
+@media only screen and (max-device-width: 650px) {
+
+  .intro1,
+  .intro2,
+  .intro3 {
+    padding: 1rem;
+    min-width: 90vw;
+  }
+
+  .staffs-No {
+    padding: 1rem;
+    flex-direction: column;
+  }
   .about{
-    margin: 4rem 0;
-    padding: 2rem 4rem;
-    display: flex;
-  }
-  .about figure{
-    flex: 50%;
-  }
-  .about img{
-    width: 100%;
-    height: auto;
-  }
-  .about div{
-    margin: 1rem;
-    flex: 50%;
-  }
-  .about button{
-    margin: 0 3rem;
-    padding: .7rem 2rem;
-  }
-  .about button a{
-    color: #5E5DBA;
-    font-weight: 700;
-  }  
-    .App{
-      display: flex;
-      margin: 4rem 0 3rem 0;
-    }
-  .our-App{
-    padding: 2rem 0rem 2rem 2rem;
-    flex: 40%;
-    text-align: left;
-  }
-  .App button{
-    border: 2px solid #5E5DBA;
-    border-radius: 10px;
-    padding: .7rem 2rem;
-    background: white;
-    color: #5E5DBA;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  .App-sample{
-    position: relative;
-    flex: 50%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  .iphone1{
-    transform: rotate(45deg);
-    z-index: -1;
-    max-height: 80%;
-    margin: 0 -25% 0 0;
-  }
-  .iphone2{
-    position: absolute;
-    right: 0;
-    max-height: 80%;
-    margin: 0 25% 0 0;
-  }
-  
-  .question{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 6rem;
-    margin: 3rem 0;
-  }
-  .question button{
-    color: #5E5DBA;
-    font-weight: bold;
-    background: white;
-    border: 2px solid #5E5DBA;
-    border-radius: 10px;
-    padding: .6rem 2rem;
-  }
-  .question img{
-    width: 100%;
-    height: auto;
-  }
-  
-  .contact-us{
     text-align: center;
-    padding: 2rem 0 3rem 0;
   }
-  .contact-us input{
-    margin: 2rem 0;
-    font-size: 1.5rem;
-    color: #5E5DBA;
-    padding: 1rem 2rem;
-    background: #FFFFFF;
-    box-shadow: inset 0px -4px 4px rgba(33, 32, 156, 0.2), inset 0px 4px 4px rgba(33, 32, 156, 0.2);
-    border-radius: 23px;
-    border: none;
-    width: clamp(12rem, 40%, 200rem);
+
+  .our-App{
+    text-align: center;
   }
-  input:focus{
-    outline: none;
+  .question{
+    text-align: center;
   }
-  .contact-us textarea{
-    resize: none;
-    font-size: 1.5rem;
-    color: #5E5DBA;
-    background: #FFFFFF;
-    box-shadow: inset 0px -4px 4px rgba(33, 32, 156, 0.2), inset 0px 4px 4px rgba(33, 32, 156, 0.2);
-    border-radius: 23px;
-    padding: .5rem 1rem;
-    width: clamp(15rem, 50%, 200rem);
-  }
-  .contact-us textarea:focus{
-    outline: none;
-  }
-  .contact-us button{
-    background: #FFFFFF;
-    padding: .7rem 2rem;
-    border: 3px solid #5E5DBA;
-    box-shadow: 0px 4px 20px rgba(4, 85, 143, 0.2);
-    border-radius: 10px;
-    color: #5E5DBA;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 1.5rem;
-  }
-  
-  @media only screen and (max-device-width: 950px){
-    .intro1, .intro2, .intro3 {
-      flex-direction: column-reverse;
-    }
-    .intro h1{
-      font-size: 2.5rem;
-      width: 80%;
-    }
-    .App h2, .about h2, .contact-us h2, .question h2{
-      font-size: 2rem;
-    }
-    .intro1, .intro2, .intro3 {
-      padding: 2rem;
-      min-width: 90vw;
-    }
-    .teachers, .schools{
-      padding: .5rem;
-      margin: 1rem 0;
-    }
-    .teachers button, .schools button {
-      font-size: 2rem;
-    }
-    .teachers h3, .schools h3{
-      font-size: 1.5rem;
-    }
-    .about{
-      flex-direction: column;
-      padding: 1rem;
-    }
-    .question{
-      flex-direction: column;
-    }
-    .App{
-      flex-direction: column;
-      margin: 4rem 0 1rem 0;
-    }
-    .our-App{
-      padding: 2rem 1rem 1rem 1rem;
-    }
-    .App-sample{
-      padding: 1rem;
-    }
-    .iphone1{
-      width: 100%;
-      margin: 0 0 0 0;
-      height: 100%;
-    }
-    .iphone2{
-      width: 100%;
-      margin: 0 0 0 0;
-      height: auto;
-    }
-    .question{
-      flex-direction: column;
-      padding: 1rem;
-    }  
-    
-  }
-  @media only screen and (max-device-width: 650px) {
-    .intro1, .intro2, .intro3 {
-      padding: 1rem;
-      min-width: 90vw;
-    }
-    .staffs-No{
-      padding: 1rem;
-      flex-direction: column;
-    }  
-  }
+}

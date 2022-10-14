@@ -22,7 +22,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/edafe-prosper-b046ba239/" target="_blank" ><img src={linkedin} /></a>
           <a href="https://www.instagram.com/mamusedafe19/" target="_blank" ><img src={instagram} /></a>
           <a href="https://www.facebook.com/prosper.edafe.10" target="_blank" > <img src={facebook} /></a>
-          <a href="https://github.com/Prosperedafe" target="_blank" > <img src={twitter} /></a>
+          <a href="https://twitter.com/ProsperEdafe?t=wcoZQFJM82zEka_bqiTWig&s=09" target="_blank" > <img src={twitter} /></a>
         </div>
       </div>
     </footer>

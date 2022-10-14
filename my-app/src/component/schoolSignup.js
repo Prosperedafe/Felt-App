@@ -89,7 +89,6 @@ class SchoolSignup extends Component {
                 onChange={this.changeHandler}
               />
               <br />
-              <span>Click to get passcode</span>
               <button type="submit">Sign Up</button>
             </form>
             <p>

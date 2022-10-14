@@ -1,0 +1,28 @@
+.search__bar{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+    padding: .5rem 1.5rem;
+    margin: 1.5rem auto;
+    width: 80%;
+  }
+  .search__bar img{
+    opacity: .5;
+    cursor: pointer;
+    height: 1rem;
+  }
+  .search__bar input{
+    overflow-x: scroll;
+    color: #5E5DBA;
+    border: none;
+    width: 100%;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .search__bar input:focus{
+    border: none;
+    outline: none;
+  }

@@ -18,14 +18,22 @@ class ParentSignup extends Component {
 
   changeHandler = (e) => {
     this.setState({ [e.target.name]: [e.target.value] });
+    console.log(e.target.value);
   };
 
   submitHandler = (e) => {
     e.preventDefault();
     console.log(this.state.name);
     axios
-      .post("https://felt-teacher.herokuapp.com/api/parents", this.state)
+      .post("https://felt-teacher.herokuapp.com/api/parents", {
+        nameOfParent: "Shulamite",
+        email: "prosperj561@gmail.com",
+        phone: 2348039739814,
+        password: "shlamite40",
+      })
       .then((response) => {
+        if (response.data.status === "success") {
+        }
         console.log(response);
       })
       .catch((error) => {
@@ -79,7 +87,6 @@ class ParentSignup extends Component {
                 onChange={this.changeHandler}
               />{" "}
               <br />
-              <span>Click to get passcode</span>
               <button type="submit">Sign Up</button>
             </form>
             <p>

@@ -49,16 +49,14 @@ const TeacherProfile = () => {
         <section className="my__details">
           <div className="my__name">
             <div>
-              <h1>prosper edafe</h1>
-              <p>
-                <span>.</span>Approved
+              <h1 id="name">prosper edafe</h1>
+              <p id="status">
+                <span>.</span>
               </p>
             </div>
             <button className="connect">CONNECT</button>
           </div>
           <p className="about__me">
-            I am a secondary school teacher with 5 years of experience in
-            working with teenagers between the ages 10-18
           </p>
         </section>
         <section className="my-contact">
@@ -67,21 +65,21 @@ const TeacherProfile = () => {
               <img src={PhoneIcon} alt="" />
               <span>Phone Number</span>
             </h2>
-            <p>08093996415</p>
+            <p id="phone__number"></p>
           </div>
           <div className="my-contact__email">
             <h2>
               <img src={EmailIcon} alt="" />
               <span>Email Address</span>
             </h2>
-            <p>prosperj561@gmail.com</p>
+            <p id="email__adress"></p>
           </div>
           <div className="my-contact__location">
             <h2>
               <img src={LocationIcon} alt="" />
               <span>Location</span>
             </h2>
-            <p>lagos</p>
+            <p id="location__adress">lagos</p>
           </div>
         </section>
         <section className="qualifications">

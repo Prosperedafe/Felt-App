@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import EditProfile from "./component/profileEdit";
 import Token from "./component/token";
+import TeachersHomepage from "./component/teachersHome";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
