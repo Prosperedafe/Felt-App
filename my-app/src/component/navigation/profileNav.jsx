@@ -1,6 +1,5 @@
-import React from "react";
-import logo from "../images/Subtract.svg"; 
-import Style from "../style/navbar.css";
+import logo from "../../images//Subtract.svg"; 
+import "./navbar.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 

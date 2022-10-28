@@ -1,9 +1,9 @@
 import React from "react";
 import Femaleworker from "../images/female-worker.svg";
-import Style from "../style/join.css";
-import NavBar from "./mainNav";
-import Footer from "./footer";
-import HomeBtn from "./home-btn";
+import "./account/join.css";
+import NavBar from "../component/navigation/mainNav";
+import Footer from "../component/navigation/footer";
+import HomeBtn from "../component/navigation/home-btn";
 import { Link } from "react-router-dom";
 
 const Welcome = () => {

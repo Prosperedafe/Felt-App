@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../images/Subtract.svg';
-import Style from "../style/navbar.css";
+import logo from '../../images/Subtract.svg';
+import "./navbar.css";
 
 const AppNav = () => {
     return(

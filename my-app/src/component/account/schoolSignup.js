@@ -1,40 +1,11 @@
-import React, { Component } from "react";
-import Style from "../style/account.css";
+import "./account.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import NavBar from "./mainNav";
+import NavBar from "../navigation/mainNav";
 import axios from "axios";
 
-class SchoolSignup extends Component {
-  constructor() {
-    super();
-    this.state = {
-      nameOfSchool: "",
-      email: "",
-      phone: "",
-      password: "",
-    };
-  }
-
-  changeHandler = (e) => {
-    this.setState({ [e.target.name]: [e.target.value] });
-  };
-
-  submitHandler = (e) => {
-    e.preventDefault();
-    console.log(this.state);
-    axios
-      .post("https://felt-teacher.herokuapp.com/api/schools", this.state)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  render() {
-    const { nameOfSchool, email, phone, password } = this.state;
+const SchoolSignup = () => {
+ 
     return (
       <>
         <header>
@@ -43,14 +14,13 @@ class SchoolSignup extends Component {
         <div className="container1">
           <section className="sign-section">
             <h1>Sign Up as School</h1>
-            <form onSubmit={this.submitHandler}>
+            <form>
               <input
                 type="text"
                 placeholder="School Name"
                 required
                 name="nameOfSchool"
-                value={nameOfSchool}
-                onChange={this.changeHandler}
+              
               />{" "}
               <br />
               <input
@@ -58,8 +28,6 @@ class SchoolSignup extends Component {
                 placeholder="E-mail Adress"
                 required
                 name="email"
-                value={email}
-                onChange={this.changeHandler}
               />{" "}
               <br />
               <input
@@ -67,8 +35,6 @@ class SchoolSignup extends Component {
                 placeholder="Phone no."
                 required
                 name="phone"
-                value={phone}
-                onChange={this.changeHandler}
               />{" "}
               <br />
               <input
@@ -76,8 +42,6 @@ class SchoolSignup extends Component {
                 placeholder="Password"
                 required
                 name="password"
-                value={password}
-                onChange={this.changeHandler}
               />{" "}
               <br />
               <input
@@ -85,8 +49,6 @@ class SchoolSignup extends Component {
                 placeholder="Confirm Password"
                 required
                 name="password"
-                value={password}
-                onChange={this.changeHandler}
               />
               <br />
               <button type="submit">Sign Up</button>
@@ -99,6 +61,5 @@ class SchoolSignup extends Component {
       </>
     );
   }
-}
 
 export default SchoolSignup;

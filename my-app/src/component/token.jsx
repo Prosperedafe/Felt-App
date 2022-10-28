@@ -1,7 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Style from "../style/password.css";
-import NavBar from "./mainNav";
+import "../style/password.css";
+import NavBar from "../component/navigation/mainNav";
 import { Navigate } from "react-router-dom";
 
 const Token = ({ authorized })  => {

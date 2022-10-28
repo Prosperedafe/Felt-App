@@ -1,11 +1,10 @@
-import React from "react";
-import logo from "../images/Subtract.svg";
-import github from "../images/icons8-github.svg";
-import linkedin from "../images/icons8-linkedin-circled.svg";
-import instagram from "../images/icons8-instagram.svg";
-import facebook from "../images/icons8-facebook.svg";
-import twitter from "../images/icons8-twitter.svg";
-import Style from "../style/navbar.css";
+import logo from "../../images/Subtract.svg";
+import github from "../../images/icons8-github.svg";
+import linkedin from "../../images/icons8-linkedin-circled.svg";
+import instagram from "../../images/icons8-instagram.svg";
+import facebook from "../../images/icons8-facebook.svg";
+import twitter from "../../images/icons8-twitter.svg";
+import "./navbar.css";
 import Link from "react-router";
 
 const Footer = () => {

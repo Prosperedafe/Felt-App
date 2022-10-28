@@ -1,5 +1,4 @@
-import React from 'react';
-import Style from '../style/search.css';
+import '../style/search.css';
 import SearchIcon from '../images/search-icon.svg';
 
 const HomeSearch = () => {

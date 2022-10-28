@@ -1,10 +1,10 @@
 import React from "react";
-import Femaleworker from "../images/female-worker.svg";
-import Style from "../style/join.css";
-import Footer from "./footer";
-import HomeBtn from "./home-btn";
+import Femaleworker from "../../images/female-worker.svg";
+import "./join.css";
+import Footer from "../navigation/footer";
+import HomeBtn from "../navigation/home-btn";
 import { Link } from "react-router-dom";
-import NavBar from "./mainNav";
+import NavBar from "../navigation/mainNav";
 
 const JoinUs = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import PhoneIcon from "../images/phone-icon.svg";
 import EmailIcon from "../images/email-icon.svg";
 import LocationIcon from "../images/location-icon.svg";

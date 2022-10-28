@@ -1,5 +1,4 @@
-import React from "react";
-import Style from "../style/nav-btn.css";
+import "./nav-btn.css";
 import { Link } from "react-router-dom";
 
 const Back = () => {

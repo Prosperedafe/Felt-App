@@ -1,8 +1,7 @@
-import React from "react";
-import Style from "../style/account.css";
-import NavBar from "./mainNav";
+import "./account.css";
+import NavBar from "../navigation/mainNav";
 import { Link } from "react-router-dom";
-import HomeBtn from "./home-btn";
+import HomeBtn from "../navigation/home-btn";
 
 const TeacherLogin = () => {
   return (

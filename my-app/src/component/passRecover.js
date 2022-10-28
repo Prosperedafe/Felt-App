@@ -1,8 +1,5 @@
-import React from "react";
-import Style from "../style/password.css";
-import AppNav from "./defNav";
-import Back from "./backBtn";
-import NavBar from "./mainNav";
+import "../style/password.css";
+import NavBar from "../component/navigation/mainNav";
 
 const PassRecover = () => {
   return (

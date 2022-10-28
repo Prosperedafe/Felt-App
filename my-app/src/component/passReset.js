@@ -1,7 +1,6 @@
-import React from "react";
-import Style from "../style/password.css";
+import "../style/password.css";
 import { useState } from "react";
-import NavBar from "./mainNav";
+import NavBar from "../component/navigation/mainNav";
 
 const PasswordReset = () => {
   return (

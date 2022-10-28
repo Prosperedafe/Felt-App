@@ -1,12 +1,11 @@
-import React from "react";
-import Style from "../style/teacherProfile.css";
+import "../style/teacherProfile.css";
 import PhoneIcon from "../images/phone-icon.svg";
 import EmailIcon from "../images/email-icon.svg";
 import LocationIcon from "../images/location-icon.svg";
 import ArrowIcon from "../images/arrow-up-down.png";
 import CVdownload from "../images/cv-download.svg";
 import Editlogo from "../images/edit-pencil.svg";
-import ProfileNav from "./profileNav";
+import ProfileNav from "../component/navigation/profileNav";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

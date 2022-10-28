@@ -1,7 +1,6 @@
-import React from "react";
-import NavBar from "./mainNav";
-import Footer from "./footer";
-import Style from "../style/home.css";
+import NavBar from "../component/navigation/mainNav";
+import Footer from "../component/navigation/footer";
+import "../style/home.css";
 import Iphone1 from "../images/X-2.svg";
 import Iphone2 from "../images/X-2.svg";
 import Femaleworker from "../images/female-worker.svg";
@@ -15,7 +14,6 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <main>
         <div className="intro">
           <section className="intro1">
             <div className="flex1">
@@ -134,7 +132,7 @@ const Home = () => {
             <button type="submit">SEND</button>
           </form>
         </section>
-      </main>
+
       <Footer />
     </>
   );

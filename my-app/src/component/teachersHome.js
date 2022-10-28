@@ -1,7 +1,6 @@
-import React from "react";
 import Style from "../style/teachersHome.css";
 import options from "../images/options.svg";
-import ProfileNav from "./profileNav";
+import ProfileNav from "../component/navigation/profileNav";
 import HomeNotification from "./notifications";
 import HomeSearch from "./homesearchbar";
 

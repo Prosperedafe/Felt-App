@@ -1,5 +1,4 @@
-import React from "react";
-import Style from "../style/teachersHome.css";
+import "../style/teachersHome.css";
 
 const HomeNotification = () => {
   return (
