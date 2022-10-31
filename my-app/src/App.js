@@ -13,7 +13,7 @@ import PassRecover from "./component/passRecover";
 import Faqs from "./component/faq";
 import TeacherProfile from "./component/teacherProfile";
 import EditProfile from "./component/profileEdit";
-import Token from "./component/token";
+import Otp from "./component/otp";
 import Page404 from "./component/page404";
 import { Navigate, Route, Routes } from "react-router-dom";
 
@@ -35,8 +35,8 @@ const App = () => {
       <Route path="/faq(s)" element={<Faqs />} />
       <Route path="/profile" element={<TeacherProfile />} />
       <Route path="/edit" element={<EditProfile />} />
+      <Route path="/otp" element={ <Otp/>} />
       <Route path="*" element={<Page404 />} />
-      <Route path="/passcode" component={() => <Token authorized={false} />} />
     </Routes>
   );
 };
