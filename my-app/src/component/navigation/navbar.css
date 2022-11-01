@@ -147,7 +147,7 @@ footer {
   .nav__links {
     flex-direction: column;
     position: absolute;
-    top: 4.5rem;
+    top: 100%;
     left: 0;
     background: #5E5DBA;
     height: 100vh;

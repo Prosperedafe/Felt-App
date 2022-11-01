@@ -13,7 +13,7 @@ import PassRecover from "./component/passRecover";
 import Faqs from "./component/faq";
 import TeacherProfile from "./component/teacherProfile";
 import EditProfile from "./component/profileEdit";
-import Otp from "./component/otp";
+import Otp from "./otp/parentOtp";
 import Page404 from "./component/page404";
 import { Navigate, Route, Routes } from "react-router-dom";
 

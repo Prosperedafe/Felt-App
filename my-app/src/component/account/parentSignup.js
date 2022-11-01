@@ -39,7 +39,7 @@ const ParentSignup = () => {
         })
         .then(
           (response) => {
-            console.log(response, "response >>>");
+            console.log(response);
             toast.success("Registration Successful", {
               position: "top-right",
               autoClose: 5000,
