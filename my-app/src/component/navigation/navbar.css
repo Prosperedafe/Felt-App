@@ -21,8 +21,6 @@
   cursor: pointer;
   display: none;
   position: relative;
-  height: 1rem;
-  overflow: visible;
 }
 
 .hamburger span {
@@ -139,7 +137,7 @@ footer {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-device-width: 920px) {
+@media screen and (max-device-width: 920px) {
   .main__nav {
     padding: 1rem 1rem;
   }
@@ -150,7 +148,8 @@ footer {
     top: 100%;
     left: 0;
     background: #5E5DBA;
-    height: 100vh;
+    text-align: center;
+    min-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 2rem 0;
@@ -173,13 +172,13 @@ footer {
   }
 }
 
-@media only screen and (max-device-width: 750px) {
+@media  screen and (max-device-width: 750px) {
   footer {
     padding: 3rem;
   }
 }
 
-@media only screen and (max-device-width: 570px) {
+@media screen and (max-device-width: 570px) {
   .app-nav {
     padding: .7rem 1rem;
   }

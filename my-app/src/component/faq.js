@@ -8,6 +8,7 @@ import { useState } from "react";
 
 const Faqs = () => {
   const {answer} = data;
+  console.log(data)
   const [isActive, setIsActive] = useState(true);
 
   const handleClick = () => {
@@ -31,20 +32,13 @@ const Faqs = () => {
           </div>
         </div>
         <section className="questions">
-          <div className="box">
-            {/* {answer.map((answers) => (
-            <button onClick={handleClick}>{answers.question}</button>
-
-            ) )} */}
-            <p
-              style={{
-                transform: isActive ? "scale(0)" : "scale(1)",
-              }}
-            >
-              {/* <img onClick={handleClick} src={questions.hide} alt="cancel" /> */}
-            </p>
-          </div>
-         
+          {/* {data.map(({answers}) => (
+            <div key={answers.id}>
+              <img src={answer.Cancel}/>
+              <button>{answers.question}</button>
+              <p>{answers.answer}</p>
+            </div>
+          ))} */}
         </section>
       </section>
     </>

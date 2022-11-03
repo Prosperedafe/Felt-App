@@ -1,4 +1,4 @@
-import "./account.css";
+import "../account/account.css";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import NavBar from "../navigation/mainNav";
@@ -15,9 +15,12 @@ const ParentSignup = () => {
     phone: "",
     password: "",
   };
+
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [token, saveToken] = useState();
+
   const navigate = useNavigate()
 
   const handleChange = (e) => {
@@ -52,7 +55,6 @@ const ParentSignup = () => {
               });
             return navigate("/otp", { replace: true });
           },
-
           (error) => {
             console.log(error.response.data.message);
             toast.error(error.response.data.message, {
@@ -72,6 +74,10 @@ const ParentSignup = () => {
     }
     setIsSubmit(true);
   };
+
+  useEffect(() => {
+    localStorage.saveToken('token', JSON.stringify(token));
+  }, [token]);
 
   useEffect(() => {
     console.log(formErrors);

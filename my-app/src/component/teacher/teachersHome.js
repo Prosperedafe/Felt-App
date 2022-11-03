@@ -1,8 +1,8 @@
-import Style from "../style/teachersHome.css";
-import options from "../images/options.svg";
-import ProfileNav from "../component/navigation/profileNav";
-import HomeNotification from "./notifications";
-import HomeSearch from "./homesearchbar";
+import Style from "./teachersHome.css";
+import options from "../../images/options.svg";
+import ProfileNav from "../navigation/profileNav";
+import HomeNotification from "../notifications";
+import HomeSearch from "../homesearchbar";
 
 const TeachersHomepage = () => {
   return (

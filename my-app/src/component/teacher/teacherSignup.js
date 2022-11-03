@@ -1,4 +1,4 @@
-import "./account.css";
+import "../account/account.css"
 import { Link } from "react-router-dom";
 import NavBar from "../navigation/mainNav";
 import axios from "axios";

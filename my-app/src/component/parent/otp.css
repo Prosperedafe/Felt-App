@@ -1,0 +1,44 @@
+.verify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  min-height:85vh;
+  background: #e6e6e8;
+}
+
+.verify div{
+ height: 100%;
+}
+
+.verify input {
+  border: none;
+  border-bottom: 2px solid #5e5dba;
+  background: none;
+  font-size: 2rem;
+  color: #5e5dba;
+  text-align: center;
+  width: clamp(200px, 60%, 250px);
+  letter-spacing: 15px;
+}
+
+.verify p {
+  color: #5e5dba;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.verify button {
+  border: 2px solid #5e5dba;
+  border-radius: 5px;
+  padding: 0.3rem 1.5rem;
+  margin-top: 2rem;
+  height: fit-content;
+  color: #5e5dba;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: poppins;
+}
+

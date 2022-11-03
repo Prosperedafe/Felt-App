@@ -1,4 +1,4 @@
-import "../style/teachersHome.css";
+// import "../style/teachersHome.css";
 
 const HomeNotification = () => {
   return (

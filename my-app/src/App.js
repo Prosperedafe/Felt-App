@@ -1,19 +1,20 @@
 import "./App.css";
 import Home from "./component/home";
 import JoinUs from "./component/account/join";
-import ParentSignup from "./component/account/parentSignup";
-import SchoolSignup from "./component/account/schoolSignup";
-import TeacherSignup from "./component/account/teacherSignup";
-import ParentLogin from "./component/account/parentLogin";
-import SchoolLogin from "./component/account/schoolLogin";
-import TeacherLogin from "./component/account/teacherLogin";
+import TeacherSignup from "./component/teacher/teacherSignup";
+import TeacherLogin from "./component/teacher/teacherLogin";
+import TeacherProfile from "./component/teacher/teacherProfile";
+import ParentSignup from "./component/parent/parentSignup";
+import ParentLogin from "./component/parent/parentLogin";
+import ParentProfile from "./component/parent/parentProfile";
+import SchoolSignup from "./component/school/schoolSignup";
+import SchoolLogin from "./component/school/schoolLogin";
 import Welcome from "./component/welcome";
 import PasswordReset from "./component/passReset";
 import PassRecover from "./component/passRecover";
 import Faqs from "./component/faq";
-import TeacherProfile from "./component/teacherProfile";
 import EditProfile from "./component/profileEdit";
-import Otp from "./otp/parentOtp";
+import Otp from "./component/parent/parentOtp";
 import Page404 from "./component/page404";
 import { Navigate, Route, Routes } from "react-router-dom";
 
@@ -34,6 +35,7 @@ const App = () => {
       <Route path="/recover" element={<PassRecover />} />
       <Route path="/faq(s)" element={<Faqs />} />
       <Route path="/profile" element={<TeacherProfile />} />
+      <Route path="/parentprofile" element={<ParentProfile />} />
       <Route path="/edit" element={<EditProfile />} />
       <Route path="/otp" element={ <Otp/>} />
       <Route path="*" element={<Page404 />} />

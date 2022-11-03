@@ -1,4 +1,4 @@
-import "./account.css";
+import "../account/account.css";
 import NavBar from "../navigation/mainNav";
 import { Link } from "react-router-dom";
 import HomeBtn from "../navigation/home-btn";

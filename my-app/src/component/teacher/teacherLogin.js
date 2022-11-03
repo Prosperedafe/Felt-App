@@ -1,9 +1,9 @@
-import "./account.css";
+import "../account/account.css"
 import NavBar from "../navigation/mainNav";
 import { Link } from "react-router-dom";
 import HomeBtn from "../navigation/home-btn";
 
-const ParentLogin = () => {
+const TeacherLogin = () => {
   return (
     <>
       <NavBar />
@@ -15,11 +15,11 @@ const ParentLogin = () => {
             <input type="email" placeholder="Email" required /> <br />
             <input type="Password" placeholder="Password" required /> <br />
             <button>Log in</button>
-            <Link className="pass-reset" to="/reset">
+            <Link className="pass-reset" to="/recover">
               Forgot password?
             </Link>
             <p>
-              Don't have an account? <Link to="/parents">Sign Up</Link>
+              Don't have an account? <Link to="/teachers">Sign Up</Link>
             </p>
           </form>
         </div>
@@ -28,4 +28,4 @@ const ParentLogin = () => {
   );
 };
 
-export default ParentLogin;
+export default TeacherLogin;

@@ -4,12 +4,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import App from "./App";
-import TeacherProfile from "./component/teacherProfile";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import EditProfile from "./component/profileEdit";
-import Otp from "./otp/parentOtp";
-import TeachersHomepage from "./component/teachersHome";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
