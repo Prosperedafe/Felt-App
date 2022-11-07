@@ -12,7 +12,7 @@ import SchoolLogin from "./component/school/schoolLogin";
 import Welcome from "./component/welcome";
 import PasswordReset from "./component/passReset";
 import PassRecover from "./component/passRecover";
-import Faqs from "./component/faq";
+import Faqs from "./faq/faq";
 import EditProfile from "./component/profileEdit";
 import Otp from "./component/parent/parentOtp";
 import Page404 from "./component/page404";

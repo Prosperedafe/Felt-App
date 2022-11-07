@@ -64,7 +64,7 @@
 
 .container1 {
   background: #E6E6E8;
-  padding: 1rem 0;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -73,17 +73,13 @@
   font-size: 1.5rem;
   margin: 1rem 3rem;
   display: inline-block;
-
 }
 
 .sign-section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: clamp(34ch, 40%, 80ch);
   justify-content: center;
-  padding: 1rem;
-  position: relative;
 }
 
 .sign-section h1 {
@@ -91,6 +87,7 @@
   font-weight: bold;
   font-size: 2rem;
   margin: 1rem auto;
+  text-align: center;
 }
 
 .sign-section input {
@@ -100,7 +97,9 @@
   background: #FFFFFF;
   border: 0.5px solid #8f8ec7;
   border-radius: 25px;
-  width: 80%;
+  width: clamp(150px, 90%, 500px);
+  display: block;
+  margin: auto;
 }
 
 .sign-section button {
@@ -119,22 +118,14 @@
 .sign-section p {
   color: #5E5DBA;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .sign-section p a {
-  display: inline;
   color: #FDB827;
-  text-decoration: underline;
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.sign-section span {
-  font-size: 1rem;
-  font-weight: 500;
-  right: 100px;
+  font-size: 1.4rem;
   cursor: pointer;
-  padding: 10px;
-  color: #312f78;
+  margin: 0;
 }

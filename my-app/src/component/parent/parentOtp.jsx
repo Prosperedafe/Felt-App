@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./otp.css";
-import signup from "../../data/signupApi";
+import api from "../../data/signupApi";
 import NavBar from "../navigation/mainNav";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -8,7 +8,7 @@ import axios from "axios";
 import Spinner from "../spinner";
 const Otp = () => {
 
-  const tokenVerify = `${signup}/verify/parent`;
+  const tokenVerify = `${api}/verify/parent`;
 
   const initialValue = {
     code: "",

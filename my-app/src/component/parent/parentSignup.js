@@ -3,11 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import NavBar from "../navigation/mainNav";
 import { useState, useEffect } from "react";
-import signup from "../../data/signupApi";
+import api from "../../data/signupApi";
 import axios from "axios";
 
 const ParentSignup = () => {
-  const formDataPost = `${signup}/parents`;
+  const formDataPost = `${api}/parents`;
 
   const initialValues = {
     nameOfParent: "",
@@ -19,7 +19,6 @@ const ParentSignup = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const [token, saveToken] = useState();
 
   const navigate = useNavigate()
 
@@ -42,7 +41,8 @@ const ParentSignup = () => {
         })
         .then(
           (response) => {
-            console.log(response);
+            console.log(response)
+            // console.log(data.data.parent._id);
             toast.success("Registration Successful", {
               position: "top-right",
               autoClose: 5000,
@@ -74,10 +74,10 @@ const ParentSignup = () => {
     }
     setIsSubmit(true);
   };
-
-  useEffect(() => {
-    localStorage.saveToken('token', JSON.stringify(token));
-  }, [token]);
+  // const id = data.data.parent._id
+  // useEffect(() => {
+  //   localStorage.saveToken('token', JSON.stringify(token));
+  // }, [token]);
 
   useEffect(() => {
     console.log(formErrors);
