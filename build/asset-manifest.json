@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.516465e7.css",
+    "main.js": "/static/js/main.599a9230.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/mobile-bg2.svg": "/static/media/mobile-bg2.a071c1a5231041001783333bd8701692.svg",
+    "static/media/female-worker.svg": "/static/media/female-worker.318b005e0d88284c94235d953ab20894.svg",
+    "static/media/mobile-bg3.svg": "/static/media/mobile-bg3.c6e4211c8070d14b7e60925df740ce67.svg",
+    "static/media/male-worker.svg": "/static/media/male-worker.b55c714af0adc8990881200d8216b8ef.svg",
+    "static/media/mobile-bg1.svg": "/static/media/mobile-bg1.068bcd973600858530d1e4d663a8f555.svg",
+    "static/media/X-2.svg": "/static/media/X-2.1f0374d83931bbbd7a2178dde6b3509d.svg",
+    "static/media/icons8-github.svg": "/static/media/icons8-github.ef0ead9597b4db83c2cbe525aae2d3a6.svg",
+    "static/media/icons8-twitter.svg": "/static/media/icons8-twitter.bdaf4a8aba1243e4a64196ff8ac25f4e.svg",
+    "static/media/icons8-linkedin-circled.svg": "/static/media/icons8-linkedin-circled.97118c060c3a168022ca63fed1140431.svg",
+    "static/media/phone-icon.svg": "/static/media/phone-icon.fa946792b09589fbc84a2a038a662778.svg",
+    "static/media/icons8-facebook.svg": "/static/media/icons8-facebook.306726543bc00bffe35e89bda711bb72.svg",
+    "static/media/icons8-instagram.svg": "/static/media/icons8-instagram.5ef52a9c0dd470fd554010aff891e225.svg",
+    "static/media/location-icon.svg": "/static/media/location-icon.edff25bd7a3d61760a12e19b3705ff71.svg",
+    "static/media/Subtract.svg": "/static/media/Subtract.a64e04deda6f9c490fb9b2ca21365d5f.svg",
+    "index.html": "/index.html",
+    "static/media/email-icon.svg": "/static/media/email-icon.58386e263984c6eb46fb84e85d46623b.svg",
+    "static/media/edit-pencil.svg": "/static/media/edit-pencil.f61fa26a320f5d5a7ccf1a68f9339648.svg",
+    "static/media/cancel-text.svg": "/static/media/cancel-text.df6b01b0f3b51a9adac6f1fc6644a230.svg",
+    "static/media/cv-download.svg": "/static/media/cv-download.9abdf09d607aa18c1dac72eced905691.svg",
+    "main.516465e7.css.map": "/static/css/main.516465e7.css.map",
+    "main.599a9230.js.map": "/static/js/main.599a9230.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.516465e7.css",
+    "static/js/main.599a9230.js"
+  ]
+}
