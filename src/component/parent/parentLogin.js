@@ -1,12 +1,10 @@
 import "../account/account.css";
-import NavBar from "../navigation/mainNav";
 import { Link } from "react-router-dom";
 import HomeBtn from "../navigation/home-btn";
 
 const ParentLogin = () => {
   return (
     <>
-      <NavBar />
       <section className="login-page">
         <HomeBtn />
         <div className="login-container">

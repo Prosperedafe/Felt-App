@@ -1,7 +1,6 @@
 import "../account/account.css";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
-import NavBar from "../navigation/mainNav";
 import { useState, useEffect } from "react";
 import api from "../../data/signupApi";
 import axios from "axios";
@@ -52,7 +51,7 @@ const ParentSignup = () => {
               draggable: true,
               progress: undefined,
               theme: "colored",
-              });
+            });
             return navigate("/otp", { replace: true });
           },
           (error) => {
@@ -66,7 +65,7 @@ const ParentSignup = () => {
               draggable: true,
               progress: undefined,
               theme: "colored",
-              });
+            });
           }
         );
     } else {
@@ -115,7 +114,6 @@ const ParentSignup = () => {
 
   return (
     <>
-      <NavBar />
       <div className="container1">
         <section className="sign-section">
           <h1>Sign Up as Parent</h1>

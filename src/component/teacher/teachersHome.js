@@ -1,4 +1,4 @@
-import Style from "./teachersHome.css";
+import "./teachersHome.css";
 import options from "../../images/options.svg";
 import ProfileNav from "../navigation/profileNav";
 import HomeNotification from "../notifications";
@@ -7,7 +7,6 @@ import HomeSearch from "../homesearchbar";
 const TeachersHomepage = () => {
   return (
     <>
-      <ProfileNav />
       <section className="teachers__home">
         <div>
           <HomeSearch />

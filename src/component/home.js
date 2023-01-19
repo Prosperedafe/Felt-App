@@ -1,5 +1,3 @@
-import NavBar from "../component/navigation/mainNav";
-import Footer from "../component/navigation/footer";
 import "../style/home.css";
 import Iphone1 from "../images/X-2.svg";
 import Iphone2 from "../images/X-2.svg";
@@ -13,7 +11,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <NavBar />
       <div className="intro">
         <section className="intro1">
           <div className="flex1">
@@ -132,8 +129,6 @@ const Home = () => {
           <button type="submit">SEND</button>
         </form>
       </section>
-
-      <Footer />
     </>
   );
 };

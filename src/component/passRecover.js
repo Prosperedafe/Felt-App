@@ -1,5 +1,5 @@
 import "../style/password.css";
-import NavBar from "../component/navigation/mainNav";
+import NavBar from "./navigation/navbar";
 
 const PassRecover = () => {
   return (

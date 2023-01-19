@@ -1,12 +1,10 @@
 import "../account/account.css";
-import NavBar from "../navigation/mainNav";
 import { Link } from "react-router-dom";
 import HomeBtn from "../navigation/home-btn";
 
 const SchoolLogin = () => {
   return (
     <>
-      <NavBar />
       <section className="login-page">
         <HomeBtn />
         <div className="login-container">
@@ -19,7 +17,7 @@ const SchoolLogin = () => {
               Forgot password?
             </Link>
             <p>
-              Don't have an account? <a hfef="/">Sign Up</a>
+              Don't have an account? <Link to="/schools">Sign Up</Link>
             </p>
           </form>
         </div>

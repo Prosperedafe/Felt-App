@@ -5,7 +5,6 @@ import LocationIcon from "../../images/location-icon.svg";
 import ArrowIcon from "../../images/arrow-up-down.png";
 import CVdownload from "../../images/cv-download.svg";
 import Editlogo from "../../images/edit-pencil.svg";
-import ProfileNav from "../../component/navigation/profileNav";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -34,7 +33,6 @@ const ParentProfile = () => {
 
   return (
     <>
-      <ProfileNav />
       <main id="my__Profile">
         <section className="my__Dp">
           <Link to="/edit">

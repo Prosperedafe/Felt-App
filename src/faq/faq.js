@@ -1,5 +1,5 @@
 import "./faq.css";
-import NavBar from "../component/navigation/mainNav";
+import NavBar from "../component/navigation/navbar";
 import Cancel from "../images/cancel-text.svg";
 import faqData from "./faqData";
 import { useState } from "react";

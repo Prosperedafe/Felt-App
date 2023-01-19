@@ -1,7 +1,7 @@
 import React from "react";
 import Femaleworker from "../images/female-worker.svg";
 import "./account/join.css";
-import NavBar from "../component/navigation/mainNav";
+import NavBar from "./navigation/navbar";
 import Footer from "../component/navigation/footer";
 import HomeBtn from "../component/navigation/home-btn";
 import { Link } from "react-router-dom";
