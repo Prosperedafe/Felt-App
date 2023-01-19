@@ -81,9 +81,8 @@ const ParentSignup = () => {
   useEffect(() => {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
     }
-  }, [formValues]);
+  }, [formValues, formErrors, isSubmit]);
 
   const validate = (values) => {
     const errors = {};
