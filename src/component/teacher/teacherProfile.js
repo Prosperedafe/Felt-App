@@ -39,7 +39,7 @@ const TeacherProfile = () => {
         <section className="my__Dp">
           <Link to="/edit">
             <button className="profile-edit">
-              <img src={Editlogo} alt="" />
+              <img src={Editlogo} alt="edit" />
               <span>EDIT</span>
             </button>
           </Link>
@@ -61,21 +61,21 @@ const TeacherProfile = () => {
         <section className="my-contact">
           <div className="my-contact__phone">
             <h2>
-              <img src={PhoneIcon} alt="" />
+              <img src={PhoneIcon} alt="phone" />
               <span>Phone Number</span>
             </h2>
             <p id="phone__number"></p>
           </div>
           <div className="my-contact__email">
             <h2>
-              <img src={EmailIcon} alt="" />
+              <img src={EmailIcon} alt="email" />
               <span>Email Address</span>
             </h2>
             <p id="email__adress"></p>
           </div>
           <div className="my-contact__location">
             <h2>
-              <img src={LocationIcon} alt="" />
+              <img src={LocationIcon} alt="location" />
               <span>Location</span>
             </h2>
             <p id="location__adress">lagos</p>
@@ -91,6 +91,8 @@ const TeacherProfile = () => {
                 style={{
                   transform: isActive ? "rotate(0deg)" : "rotate(180deg)",
                 }}
+                alt='arrow'
+
               />
             </div>
             {isActive && (
@@ -128,6 +130,7 @@ const TeacherProfile = () => {
                 style={{
                   transform: isOpen ? "rotate(0deg)" : "rotate(180deg)",
                 }}
+                alt='arrow'
               />
             </div>
             {isOpen && (
@@ -166,6 +169,7 @@ const TeacherProfile = () => {
                 }}
                 src={ArrowIcon}
                 className="toggleOpener"
+                alt="arrow"
               />
             </div>
 
@@ -173,7 +177,7 @@ const TeacherProfile = () => {
               <div className="CV__download">
                 <div>
                   <span>PDF</span>
-                  <img src={CVdownload} alt="" />
+                  <img src={CVdownload} alt="cv" />
                 </div>
               </div>
             )}

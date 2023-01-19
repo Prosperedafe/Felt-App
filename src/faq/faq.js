@@ -1,15 +1,16 @@
 import "./faq.css";
 import NavBar from "../component/navigation/mainNav";
 import Cancel from "../images/cancel-text.svg";
-import data from "./faqData";
+import faqData from "./faqData";
 import { useState } from "react";
 
 const Faqs = () => {
 
-  const [isActive, setIsActive] = useState(true);
-
-  const handleClick = () => {
-    setIsActive((current) => !current);
+  const [faq, setFaq] = useState();
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = (e, faq) => {
+    setFaq(faq);
+    setIsActive(!isActive)
   };
 
   return (
@@ -23,19 +24,17 @@ const Faqs = () => {
           </div>
         </div>
         <section className="questions">
-          {data.answers.map((faq) => (
-            <div className="box" key={faq.id}>
-              <p
-                style={{
-                  display: isActive ? "none" : "block"
-                }}
-              >
-                <img src={Cancel} onClick={handleClick}/>
-                {faq.answer}
-                </p>
-              <button onClick={handleClick}>{faq.question}</button>
+          {faqData.map((faq, index) => (
+            <div className="box" onClick={(e) => handleClick(e, faq)}
+              key={faq.id}>
+              <button onClick={() => setIsActive(!isActive)}>{faq.question}</button>
             </div>
           ))}
+          {isActive && (
+            <p className="questions__p">
+              <img src={Cancel} onClick={() => setIsActive(!isActive)} alt="cancel" />
+              {faq.answer}
+            </p>)}
         </section>
       </section>
     </>

@@ -1,8 +1,6 @@
 import PhoneIcon from "../images/phone-icon.svg";
 import EmailIcon from "../images/email-icon.svg";
 import LocationIcon from "../images/location-icon.svg";
-import Style from "../style/profileEdit.css";
-import { useState } from "react";
 
 const EditProfile = () => {
   return (
@@ -10,19 +8,19 @@ const EditProfile = () => {
       <form id="form1" className="about-form" autoComplete="on">
         <div className="contact">
           <div className="contact-box">
-            <img src={PhoneIcon} />
+            <img src={PhoneIcon} alt="phone" />
             <label htmlFor="Phone Number">Phone Number</label> <br />
             <input type="tel" />
           </div>
 
           <div className="contact-box">
-            <img src={EmailIcon} />
+            <img src={EmailIcon} alt="email" />
             <label htmlFor="email">Email Address</label> <br />
             <input type="email" />
           </div>
 
           <div className="contact-box">
-            <img src={LocationIcon} />
+            <img src={LocationIcon} alt="location" />
             <label htmlFor="Location">Location</label> <br />
             <input type="text" />
           </div>

@@ -1,14 +1,16 @@
-#my__profile{
+#my__profile {
     transition: all .3s ease;
 }
-.my__Dp{
+
+.my__Dp {
     background: #C4C4C4;
     height: 15rem;
     position: relative;
     margin: 0;
     width: 100%;
 }
-.profile__picture{
+
+.profile__picture {
     height: 180px;
     width: 180px;
     object-fit: cover;
@@ -19,7 +21,8 @@
     border: 3px solid black;
     left: 1rem;
 }
-.profile-edit{
+
+.profile-edit {
     padding: .5rem 1.5rem;
     background: #FFFFFF;
     border: 2px solid #5E5DBA;
@@ -34,45 +37,54 @@
     float: right;
     margin: 1rem;
 }
-.profile-edit img{
+
+.profile-edit img {
     height: 16px;
     width: 16px;
     object-fit: cover;
     margin: 0 3px;
     position: sticky;
 }
-.profile-edit span{
+
+.profile-edit span {
     margin: 0 3px;
 }
-.my__details{
+
+.my__details {
     margin: 3rem 0 0 0;
     padding: 1rem 2rem 1rem 2rem;
 }
-.my__details h1{
+
+.my__details h1 {
     color: #5E5DBA;
     font-weight: 500;
     font-size: 2rem;
     text-transform: uppercase;
 }
-.my__name{
+
+.my__name {
     display: flex;
     justify-content: space-between;
     padding: 0 4rem 0 0;
 }
-.my__name > div{
+
+.my__name>div {
     display: flex;
     align-items: center;
 }
-.my__name > div p{
+
+.my__name>div p {
     margin: 1rem auto;
     color: #2CC706;
     font-weight: bold;
 }
-.my__name > div span{
+
+.my__name>div span {
     font-size: 2rem;
     margin: 0 .1rem;
 }
-.my__name .connect{
+
+.my__name .connect {
     color: #878787;
     font-weight: bold;
     font-size: 1rem;
@@ -82,7 +94,8 @@
     border: 2px solid #878787;
     border-radius: 10px;
 }
-.buy-connect{
+
+.buy-connect {
     background: #FFFFFF;
     border: 2px solid #5E5DBA;
     box-shadow: 0px 4px 20px rgba(4, 85, 143, 0.2);
@@ -94,66 +107,73 @@
     padding: .6rem 2rem;
 }
 
-.about__me{
+.about__me {
     color: #23120B;
     font-size: 1rem;
     font-weight: 500;
     margin: 1rem 0;
 }
-.my-contact{
+
+.my-contact {
     display: flex;
-    padding: .5rem 4rem .5rem 0 ;
+    padding: .5rem 4rem .5rem 0;
     margin: .5rem 0;
     text-align: center;
 }
-.my-contact  div{
+
+.my-contact div {
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(33, 32, 156, 0.2);
     border-radius: 25px;
     padding: 1rem 2rem;
     margin: 0 2rem;
 }
-.my-contact p{
+
+.my-contact p {
     font-weight: 500;
     color: #525050;
     font-size: 1rem;
 }
-.my-contact h2{
+
+.my-contact h2 {
     color: #5E5DBA;
     font-weight: 500;
     font-size: 1.2rem;
     margin: .5rem 0;
 }
-.my-contact h2 span{
+
+.my-contact h2 span {
     margin: 0 1rem;
 }
 
-.qualifications{
+.qualifications {
     margin: 3rem 0;
     border-top: 1px solid #cfcbcb;
 }
-.qualifications h1{
+
+.qualifications h1 {
     color: #23120B;
     font-size: 1.1rem;
     font-weight: 500;
     margin: .5rem;
 }
 
-.open-menu{
+.open-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 2rem; 
-    border-bottom: 1px solid #cfcbcb; 
+    padding: .5rem 2rem;
+    border-bottom: 1px solid #cfcbcb;
     border-top: .5px solid #cfcbcb;
     cursor: pointer;
 }
 
-.work-experience p, .vacancy p{
+.work-experience p,
+.vacancy p {
     padding: 1rem 2rem;
 }
 
-.toggleOpener{
+.toggleOpener {
     margin-right: 4rem;
     opacity: .6;
     transition: all .1s ease;
@@ -161,65 +181,77 @@
     height: 15px;
 }
 
-.qualifications table td:nth-child(2){
+.qualifications table td:nth-child(2) {
     border-left: 1px solid #FDB827;
     border-right: 1px solid #FDB827;
     padding: 1rem;
 }
-.qualifications table td{
+
+.qualifications table td {
     padding: 1rem 2rem;
 }
-.CV__download{
+
+.CV__download {
     background: #FFFFFF;
     width: clamp(28ch, 20%, 45ch);
     border: 0.5px solid #a29e9e;
     margin: 1rem 2rem 0 2rem;
     padding: 2rem 0 0 0;
 }
-.CV__download div{
-    background: #ee3636; 
+
+.CV__download div {
+    background: #ee3636;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .3rem 2rem;
 }
-.CV__download img{
+
+.CV__download img {
     height: 22px;
 }
-.CV__download span{
+
+.CV__download span {
     color: white;
     font-weight: 500;
     font-size: 1.3rem;
 }
 
-@media only screen and (max-device-width: 950px){
-    .my__Dp{
+@media only screen and (max-width: 950px) {
+    .my__Dp {
         height: 10rem;
     }
-    .profile__picture{
+
+    .profile__picture {
         height: 100px;
         width: 100px;
         bottom: -50px;
     }
-    .my__details{
+
+    .my__details {
         margin: 0rem 0 0 0;
         padding: 0 1rem 1rem 1rem;
     }
-    .my__name{
+
+    .my__name {
         flex-direction: column;
         padding: 1rem .5rem;
     }
-    .my__name > div{
+
+    .my__name>div {
         flex-direction: column-reverse;
-        align-items:flex-start;
+        align-items: flex-start;
     }
-    .my__name > div p{
+
+    .my__name>div p {
         margin: 0 auto;
     }
-    .about__me{
+
+    .about__me {
         margin: .2rem 0;
     }
-    .my-contact{
+
+    .my-contact {
         flex-direction: column;
         padding: .2rem;
         background: #FFFFFF;
@@ -227,12 +259,14 @@
         border-radius: 25px;
         margin: 1rem 2rem;
     }
-    .my-contact div{
+
+    .my-contact div {
         box-shadow: 0px 0px 0px white;
         margin: 0 auto;
     }
-    .toggleOpener{
+
+    .toggleOpener {
         margin-right: 1rem;
     }
-   
+
 }

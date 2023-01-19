@@ -14,7 +14,7 @@ const Welcome = () => {
         <HomeBtn />
         <section className="select-profile">
           <figure>
-            <img src={Femaleworker} alt="" />
+            <img src={Femaleworker} alt="welcome" />
           </figure>
           <div>
             <h1>Welcome Back, login to your Account</h1>

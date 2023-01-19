@@ -16,13 +16,12 @@ import Faqs from "./faq/faq";
 import EditProfile from "./component/profileEdit";
 import Otp from "./component/parent/parentOtp";
 import Page404 from "./component/page404";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/home" replace />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/join" element={<JoinUs />} />
       <Route path="/welcome" element={<Welcome />} />
       <Route path="/parent" element={<ParentLogin />} />
@@ -37,7 +36,7 @@ const App = () => {
       <Route path="/profile" element={<TeacherProfile />} />
       <Route path="/parentprofile" element={<ParentProfile />} />
       <Route path="/edit" element={<EditProfile />} />
-      <Route path="/otp" element={ <Otp/>} />
+      <Route path="/otp" element={<Otp />} />
       <Route path="*" element={<Page404 />} />
     </Routes>
   );
